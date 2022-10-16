@@ -8,33 +8,33 @@
   <body>
     <header>
       <nav>Meeting Minute 1, Meeting Minute 2, Meeting Minute 3, Meeting Minute 4</nav>
-      <h1>Meeting Minute 4: Project</h1>
-      <h1>Brainstorming</h1>
+      <h1 id="meeting-name">Meeting Minute 4: Project</h1>
+      <h1 id="meeting-topic">Brainstorming</h1>
       <h1>10/09/2022</h1>
       <h2><span>Attendees:</span></h2>
       <ul>
-        <li>Jeffrey Liu #1</li>
-        <li>Jeffrey Liu #58</li>
-        <li>Jeffrey Liu #69</li>
-        <li>Jeffrey Liu #4269</li>
+        <li class="attendees">Jeffrey Liu #1</li>
+        <li class="attendees">Jeffrey Liu #58</li>
+        <li class="attendees">Jeffrey Liu #69</li>
+        <li class="attendees">Jeffrey Liu #4269</li>
       </ul>
     </header>
 
     <hr>
 
     <main> <!-- note contents -->
-      <section>
+      <section class="contents">
         <h3>Agenda:</h3>
         <ol>
           <li>Further brainstorm ideas around the topic we chose last meeting</li>
           <li>Discuss current state of affairs in the world</li>
         </ol>
       </section>
-      <section>
+      <section class="contents">
         <h3>Last Meeting:</h3>
         <div>
           <p>We discussed what ideas we wanted our project to be centered around. Here were some of them:</p>
-          <ol>
+          <ol id="options">
             <li>Fast Food</li>
             <li>Anime</li>
             <li>Video Games</li>
@@ -44,7 +44,7 @@
         </div>
       </section>
       <br>
-      <section>
+      <section class="contents">
         <h3>This Meeting:</h3>
         <div>
           <p>Take a poll to choose the best anime!!!!!</p>
@@ -55,7 +55,7 @@
           </details>
           <p>For anyone who has not watched this anime yet I will place my cover of the show's opening below for everyone to enjoy to their heart's content:</p>
           <video controls>
-            <source src="./assets/videos/cover.mp4" type="video/mp4"></video>
+            <source id="video" src="./assets/videos/cover.mp4" type="video/mp4"></video>
           <p>Here is the audio file for anyone that wants to just enjoy the singing by yours truly:</p>
           <audio controls>
             <source src="./assets/videos/cover.mp3" type="audio/mp3">
