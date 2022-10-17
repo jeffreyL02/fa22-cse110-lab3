@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./index.css">
+    <link href="./assets/FuzzyBubbles" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -49,17 +51,26 @@
         <div>
           <p>Take a poll to choose the best anime!!!!!</p>
           <p><em>Note that choice of anime is flexible</em></p>
-          <details>
-            <summary>Yay! The anime that we decided on is...(click me to reveal)</summary>
-            <i>Spy x Family</i>
-          </details>
-          <p>For anyone who has not watched this anime yet I will place my cover of the show's opening below for everyone to enjoy to their heart's content:</p>
-          <video controls>
-            <source id="video" src="./assets/videos/cover.mp4" type="video/mp4"></video>
-          <p>Here is the audio file for anyone that wants to just enjoy the singing by yours truly:</p>
-          <audio controls>
-            <source src="./assets/videos/cover.mp3" type="audio/mp3">
-          </audio>
+          <div id="flex-container">
+            <div>
+              <details>
+                <summary>Yay! The anime that we decided on is...(click me to reveal)</summary>
+                <i>Spy x Family</i>
+              </details>
+            </div>
+            <div>
+              <p>For anyone who has not watched this anime yet I will place my cover of the show's opening below for everyone to enjoy to their heart's content:</p>
+              <video controls>
+                <source id="video" src="./assets/videos/cover.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div>
+              <p>Here is the audio file for anyone that wants to just enjoy the singing by yours truly:</p>
+              <audio controls>
+                <source src="./assets/videos/cover.mp3" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
         </div>
       </section>
     </main>
