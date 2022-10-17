@@ -1,0 +1,138 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+@font-face {
+    font-family: 'fuzzy-bubbles';
+    src: url('./assets/FuzzyBubbles/FuzzyBubbles-Regular.ttf');
+}
+
+body {
+    background-color: pink;
+    border-style: dashed;
+    border-color: rgb(24, 123, 86);
+    border-width: 5px;
+    border-radius: 2em;
+}
+
+@media screen and (min-width: 300px) {
+    body {
+        background-color: blue;
+    }
+}
+
+nav {
+    margin: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vmin;
+    padding-left: 3vw;
+    padding-right: 3vmax;
+    color: hsl(145, 100%, 90%);
+    text-align: center;
+    display: block;
+}
+
+.contents {
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 1in;
+    margin-right: 1in;
+}
+
+#meeting-name {
+    color: #1ee4af;
+    text-decoration: underline red;
+    display: inline;
+    position: sticky;
+    top: 0;
+}
+
+[href] {
+    color: purple;
+    text-decoration: none;
+}
+
+p:hover {
+    color: blue;
+}
+
+summary, i {
+    font-family: fuzzy-bubbles;
+}
+
+ol li {
+    color: orange;
+}
+
+button:active {
+    background-color: red;
+}
+
+footer > img{
+    position: relative;
+    top: 1cm;
+    width: 100vw;
+    min-width: none;
+    height: 20vh;
+}
+
+
+/**
+ * Flexbox related styling
+ */
+#flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: yellow;
+    justify-content: center;
+}
+  
+#flex-container > div {
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 12px;
+    margin: 2vh;
+}
+
+video {
+    height: 100px;
+    width: 200px;
+    max-width: 200px;
+}
+
+audio {
+    width: 200px;
+}
+
+
+/**
+ * Grid related styling
+ */
+ main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3vh;
+    row-gap: 1vw;
+ }
+
+ main > section {
+    width: 32vw;
+    border-style: dashed;
+    border-color: rgb(24, 123, 86);
+    border-width: 5px;
+
+ }
+
+ h1 + h2 {
+    background-color: red;
+ }
+
+ h1 ~ h1 {
+    background-color: pink;
+ }
+
+ section.contents {
+    font-weight: bold;
+ }
